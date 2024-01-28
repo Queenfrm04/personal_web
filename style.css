@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#welcome {
+    /* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('Page\ 1.jpg');
+    background-size: cover; */
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#two {
+    background-color: rgb(211, 79, 79);
+}
+
+#three {
+    /* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('Page\ 3.jpg');
+    background-size: cover; */
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#four {
+    background-color: rgb(191, 64, 191);
+}
+
+#five {
+    background-color: rgb(240, 251, 29);
+}
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+/* Page content */
+.content {
+    padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
+.animate-charcter
+{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 100px;
+
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
